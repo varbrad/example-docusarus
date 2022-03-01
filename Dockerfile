@@ -9,7 +9,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm ci
 COPY . .
-ARG SOME_THING="hello"
+ARG SOME_THING
 RUN npm run build
 
 # Stage 2.
